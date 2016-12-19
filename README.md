@@ -28,7 +28,7 @@ Download from the Google Chrome web store :
 https://chrome.google.com/webstore/detail/forget-that-page/nolcpahhgjbmaoemlhaiplpjlljaefic
 
 #### Unstable version
-* Download the last release from https://github.com/ForgetThatPage/ForgetThatPage/releases
+* Download the latest release from https://github.com/ForgetThatPage/ForgetThatPage/releases
 * Unzip the archive to a folder
 * Go to "chrome://extensions/" on your Chromium/Google Chrome browser
 * Allow developer mode
@@ -45,7 +45,7 @@ Download from Mozilla add-ons store:
 https://addons.mozilla.org/firefox/addon/forget-that-page/
 
 #### Unstable version
-* Download the last release (.xpi file) from https://github.com/ForgetThatPage/ForgetThatPage/releases
+* Download the latest release (.xpi file) from https://github.com/ForgetThatPage/ForgetThatPage/releases
 * Go to "about:addons"
 * Click on the gear (Tools for all add-ons)
 * Select "Install Add-on From File..."

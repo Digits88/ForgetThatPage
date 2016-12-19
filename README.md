@@ -61,7 +61,7 @@ Same as Chrome version
 
 ## Versioning
 
-### Version 1.5.2 - 20/12/2016
+### Version 1.5.2 - 19/12/2016
 * Code optimization (Thanks to mubaidr : https://github.com/mubaidr)
 
 ### Version 1.5.1 - 30/10/2016

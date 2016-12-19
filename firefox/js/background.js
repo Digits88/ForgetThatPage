@@ -1,13 +1,14 @@
 //
 // background.js
 //
-// v1.3.1
+// v1.4.0
 //
 // Cyril Weller
 // forgetthatpage@protonmail.com
 //
 // GNU GPLv3 license
 //
+// Special thanks to mubaidr (https://github.com/mubaidr)
 
 // When the tab is changed :
 //  The icon is green if the tab is not on the history
@@ -50,6 +51,7 @@ function UpdateIcon(id) {
   }
 }
 
+// Function to set add-on icon
 function SetIcon(url) {
 
   chrome.history.getVisits({

@@ -61,7 +61,7 @@ Same as Chrome version
 
 ## Versioning
 
-### Version 1.5.3 - Work In Progress
+### Version 1.5.3 - 31/12/2016
 * Debug blank message
 * Specific project folder for Opera version
 * Code optimization for Chrome and Opera (Thanks to mubaidr : https://github.com/mubaidr)

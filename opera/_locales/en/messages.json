@@ -1,0 +1,29 @@
+{
+  "websiteDeletedOK": {
+    "message": "This page was successfully deleted from your browsing history"
+  },
+
+  "optionsTitleMessage": {
+    "message": "Data to delete"
+  },
+
+   "cookieMessage": {
+    "message": "Cookies"
+  },
+
+   "sessionStorageMessage": {
+    "message": "Session storage"
+  },
+
+   "localStorageMessage": {
+    "message": "Local storage"
+  },
+
+  "downloadsMessage": {
+    "message": "Downloads list"
+  },
+
+  "optionsSavedMessage": {
+    "message": "Options saved"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "websiteDeletedOK": {
+    "message": "تم حذف هذه الصفحة من تاريخ التصفح بنجاح"
+  },
+
+  "cookieMessage": {
+    "message": "ملف تعريف ارتباط"
+  },
+
+  "optionsTitleMessage": {
+    "message": "بيانات حذف"
+  },
+
+  "sessionStorageMessage": {
+    "message": "تخزين الجلسة"
+  },
+
+  "localStorageMessage": {
+    "message": "التخزين المحلي"
+  },
+
+  "downloadsMessage": {
+    "message": "قائمة التنزيلات"
+  },
+
+  "optionsSavedMessage": {
+    "message": "خيارات حفظ"
+  }
+}

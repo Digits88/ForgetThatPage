@@ -1,0 +1,25 @@
+{
+  "websiteDeletedOK": {
+    "message": "Esta página fue eliminada con éxito del historial del navegador"
+  },
+
+  "optionsTitleMessage": {
+    "message": "Datos para borrar"
+  },
+
+  "sessionStorageMessage": {
+    "message": "Almacenamiento de la sesión"
+  },
+
+  "localStorageMessage": {
+    "message": "Almacenamiento local"
+  },
+
+  "downloadsMessage": {
+    "message": "Lista de descargas"
+  },
+
+  "optionsSavedMessage": {
+    "message": "Opciones salvadas"
+  }
+}

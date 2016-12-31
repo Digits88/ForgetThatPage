@@ -1,0 +1,29 @@
+{
+  "websiteDeletedOK": {
+    "message": "यह पृष्ठ आपके ब्राउज़िंग इतिहास से मिटादिया गया हैं"
+  },
+
+   "cookieMessage": {
+    "message": "स्मृतिशेष"
+  },
+
+  "optionsTitleMessage": {
+    "message": "डेटा को नष्ट करने"
+  },
+
+  "sessionStorageMessage": {
+    "message": "सत्र का भंडारण"
+  },
+
+  "localStorageMessage": {
+    "message": "स्थानीय भंडारण"
+  },
+
+  "downloadsMessage" : {
+    "message": "डाउनलोड सूची"
+  },
+
+  "optionsSavedMessage": {
+    "message": "विकल्प सेव किये गए"
+  }
+}

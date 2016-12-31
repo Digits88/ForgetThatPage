@@ -1,0 +1,29 @@
+{
+  "websiteDeletedOK": {
+    "message": "Cette page a été correctement effacée de votre historique de navigation"
+  },
+
+  "optionsTitleMessage": {
+    "message": "Données à supprimer"
+  },
+
+  "cookieMessage": {
+    "message": "Cookies"
+  },
+
+  "sessionStorageMessage": {
+    "message": "Stockage de session"
+  },
+
+  "localStorageMessage": {
+    "message": "Stockage local"
+  },
+
+  "downloadsMessage": {
+    "message": "Liste de téléchargements"
+  },
+
+  "optionsSavedMessage": {
+    "message": "Options sauvegardées"
+  }
+}

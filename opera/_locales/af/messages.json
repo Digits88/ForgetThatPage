@@ -1,0 +1,29 @@
+{
+  "websiteDeletedOK": {
+    "message": "Die blad was suksesvol uit jou soek geskiedenis verwis"
+  },
+
+  "optionsTitleMessage": {
+    "message": "Data te verwyder"
+  },
+
+  "sessionStorageMessage": {
+   "message": "Sessie stoor"
+  },
+
+  "localStorageMessage": {
+   "message": "Plaaslike stoor"
+  },
+
+  "cookieMessage": {
+    "message": "Koekies"
+  },
+
+  "downloadsMessage":{
+    "message": "Downloads lys"
+  },
+
+  "optionsSavedMessage": {
+    "message": "Opsies gered"
+  }
+}

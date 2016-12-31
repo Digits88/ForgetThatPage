@@ -1,0 +1,29 @@
+{
+  "websiteDeletedOK": {
+    "message": "این صفحه با موفقیت از سابقه بازدید مرورگر شما پاک شد"
+  },
+
+  "optionsTitleMessage": {
+    "message": "داده را حذف کنید"
+  },
+
+   "cookieMessage": {
+    "message": "بیسکویت ها"
+  },
+
+   "sessionStorageMessage": {
+    "message": "ذخیره سازی جلسه"
+  },
+
+   "localStorageMessage": {
+    "message": "ذخیره سازی محلی"
+  },
+
+  "downloadsMessage": {
+    "message": "لیست دانلود"
+  },
+
+  "optionsSavedMessage": {
+    "message": "گزینه های ذخیره شده"
+  }
+}

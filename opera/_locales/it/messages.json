@@ -1,0 +1,26 @@
+{
+  "websiteDeletedOK": {
+    "message": "Questa pagina è stata rimossa con successo dalla cronologia di navigazione"
+  },
+
+  "optionsTitleMessage": {
+    "message": "Dati da eliminare"
+  },
+
+ "sessionStorageMessage": {
+    "message": "Memoria delle sessioni"
+  },
+
+  "localStorageMessage": {
+    "message": "Memoria locale"
+  },
+
+  "downloadsMessage": {
+    "message": "Lista de caricare"
+  },
+
+  "optionsSavedMessage": {
+    "message": "Opzioni salvati"
+  }
+
+}

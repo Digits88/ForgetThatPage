@@ -12,13 +12,13 @@
 var pageCookies;
 var pageLocalStorage;
 var pageSessionStorage;
-var downloads;
+var pageDownloads;
 
 chrome.storage.local.get({
   cookies: true,
   localStorage: true,
   sessionStorage: true,
-  downloads: true
+  pageDownloads: true
 }, function(items) {
   pageCookies = items.cookies ;
   pageLocalStorage  = items.localStorage ;
@@ -67,18 +67,18 @@ function forgetThatPage(currentUrl){
 			}
 		}
 
-		/********************/
+    /********************/
 		/* DELETE DOWNLOADS */
 		/********************/
 
 		if (pageDownloads) {
 
-		// Erase downloads for current url
-		chrome.downloads.erase({
-			url:currentUrl
-		});
-		}	
-    
+			// Erase downloads for current url
+			chrome.downloads.erase({
+				url: currentUrl
+			});
+		}
+
 		/******************/
 		/* DELETE COOKIES */
 		/******************/

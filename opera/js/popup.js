@@ -74,6 +74,7 @@ function forgetThatPage(tab){
 		/* DELETE DOWNLOADS */
 		/********************/
 
+    //alert(pageDownloads);
 		if (pageDownloads) {
 
 			// Erase downloads for current url

@@ -18,15 +18,15 @@ var pageSessionStorage;
 var pageDownloads;
 
 chrome.storage.sync.get({
-  cookies: true,
-  localStorage: true,
-  sessionStorage: true,
-  pageDownloads: true
-}, function(items) {
-  pageCookies = items.cookies ;
-  pageLocalStorage  = items.localStorage ;
-  pageSessionStorage = items.sessionStorage ;
-  pageDownloads = items.downloads ;
+	cookies: true,
+	localStorage: true,
+	sessionStorage: true,
+	pageDownloads: true
+	}, function(items) {
+	pageCookies = items.cookies ;
+	pageLocalStorage  = items.localStorage ;
+	pageSessionStorage = items.sessionStorage ;
+	pageDownloads = items.downloads ;
 });
 
 //
@@ -37,110 +37,117 @@ chrome.storage.sync.get({
 //
 function forgetThatPage(tab){
 
-	var currentUrl = tab.url;
+	var curUrl = tab.url;
 
 	/******************/
 	/* DELETE HISTORY */
 	/******************/
 
-	// Delete history for that url
-	chrome.history.deleteUrl({
+	// Search in history for that url. Getting all HistoryItems for tab.url and those building up on it.
+	chrome.history.search({text: curUrl}, function(hist){
+		//deleting history, session etc. for each url.
+		for (i = 0; i < hist.length; i++) {
 
-		url: currentUrl
+			var current = hist[i].url
+			chrome.history.deleteUrl({
 
-	}, function(){
+				url: current
 
-		/************************************/
-		/* DELETE SESSION AND LOCAL STORAGE */
-		/************************************/
+				}, function(){
 
-		// For http/https urlif option value is true
-		if (currentUrl.indexOf("http") !== -1) {
-			if (pageSessionStorage) {
-				// Alert for testing
-				//alert("delete sessionStorage");
-				chrome.tabs.executeScript(tab.id, {code: 'sessionStorage.clear()'});
-			}
+				/************************************/
+				/* DELETE SESSION AND LOCAL STORAGE */
+				/************************************/
 
-			// Delete local storage for current url if option value is true
-			if (pageLocalStorage) {
-				// Alert for testing
-				//alert("delete localStorage");
-				chrome.tabs.executeScript(tab.id, {code: 'localStorage.clear()'});
-			}
-		}
+				// For http/https urlif option value is true
+				if (current.indexOf("http") !== -1) {
+					if (pageSessionStorage) {
+						// Alert for testing
+						//alert("delete sessionStorage");
+						chrome.tabs.executeScript(tab.id, {code: 'sessionStorage.clear()'});
+					}
 
-		/********************/
-		/* DELETE DOWNLOADS */
-		/********************/
+					// Delete local storage for current url if option value is true
+					if (pageLocalStorage) {
+						// Alert for testing
+						//alert("delete localStorage");
+						chrome.tabs.executeScript(tab.id, {code: 'localStorage.clear()'});
+					}
+				}
 
-    //alert(pageDownloads);
-		if (pageDownloads) {
+				/********************/
+				/* DELETE DOWNLOADS */
+				/********************/
 
-			// Erase downloads for current url
-			chrome.downloads.erase({
-				url: currentUrl
-			});
-		}
+				//alert(pageDownloads);
+				if (pageDownloads) {
 
-		/******************/
-		/* DELETE COOKIES */
-		/******************/
+					// Erase downloads for current url
+					chrome.downloads.erase({
+						url: current
+					});
+				}
 
-		// Delete cookies if option value is true
-		if (pageCookies){
+				/******************/
+				/* DELETE COOKIES */
+				/******************/
 
-			// Alert for testing
-			//alert("delete cookies");
+				// Delete cookies if option value is true
+				if (pageCookies){
 
-			// Get all cookies for current url
-			chrome.cookies.getAll({
+					// Alert for testing
+					//alert("delete cookies");
 
-				url: currentUrl
+					// Get all cookies for current url
+					chrome.cookies.getAll({
 
-			}, function(cookies) {
+						url: current
 
-				// For every cookie in the cookie list
-				for (i = 0; i < cookies.length; i++) {
+						}, function(cookies) {
 
-					// Remove the cookie
-					chrome.cookies.remove({
+						// For every cookie in the cookie list
+						for (i = 0; i < cookies.length; i++) {
 
-						url: currentUrl,
-						name: cookies[i].name
+							// Remove the cookie
+							chrome.cookies.remove({
+
+								url: current,
+								name: cookies[i].name
+
+							});
+						}
 
 					});
 				}
 
+				/*******************/
+				/* DISPLAY MESSAGE */
+				/*******************/
+
+				// Get navigator language
+				var userLang = navigator.language || navigator.userLanguage;
+
+				// If language is persian, arabic or hebrew,
+				// font-size is 11pt to be more readable
+				if (userLang == 'ar' || userLang == 'fa' || userLang == 'he') {
+					document.getElementById("returnText").setAttribute('style','font-size:11pt');
+				}
+
+				// Get message for browser locale
+				var message = chrome.i18n.getMessage("websiteDeletedOK");
+
+				// Display message
+				document.getElementById("returnText").innerHTML = message;
+
+				// Change icon to really see it's ok
+				chrome.browserAction.setIcon({ path:"img/icon/swipe_done128.png" });
+
+				// After 1.5 seconds, the popup closes itself
+				setTimeout(function(){ window.close() },1500);
+
 			});
-		}
 
-		/*******************/
-		/* DISPLAY MESSAGE */
-		/*******************/
-
-		// Get navigator language
-		var userLang = navigator.language || navigator.userLanguage;
-
-		// If language is persian, arabic or hebrew,
-		// font-size is 11pt to be more readable
-		if (userLang == 'ar' || userLang == 'fa' || userLang == 'he') {
-			document.getElementById("returnText").setAttribute('style','font-size:11pt');
-		}
-
-		// Get message for browser locale
-		var message = chrome.i18n.getMessage("websiteDeletedOK");
-
-		// Display message
-		document.getElementById("returnText").innerHTML = message;
-
-		// Change icon to really see it's ok
-		chrome.browserAction.setIcon({ path:"img/icon/swipe_done128.png" });
-
-		// After 1.5 seconds, the popup closes itself
-		setTimeout(function(){ window.close() },1500);
-
-	});
+		}})
 
 }
 

@@ -78,22 +78,6 @@ Same as Chrome version
 * Added Norwegian, Vietnamese, Bulgarian, Greek, Ukrainian and Thai (Translation from https://gengo.com/)
 * Changed green icon
 
-### Version 1.4.0 - 09/10/2016
-* Delete cookies
-* Added Hindi, Bengali (Thanks to DreaMzZ), Afrikaans (Thanks to Grimmjow|LIVE)
-
-### Version 1.3.1 - 06/10/2016
-* Same version number for Chrome, Firefox and Opera
-* Added Japanese and Chinese for all versions
-
-### Version 1.3.0 - 03/10/2016
-* Delete local storage
-* Delete session storage
-* Popup closes after 1.5 seconds
-* Small design changes
-* Added Swedish, Serbian, Welsh, Slovak, Hungarian, Czech, Finnish, Tagalog, Russian
-* Corrected German, Italian
-
 <b> Thanks to all Reddit translators for their help</b>
 
 ### All versions notes are available in the Wiki section

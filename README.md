@@ -61,6 +61,9 @@ Same as Chrome version
 
 ## Versioning
 
+### Version 1.6.0 - Work In Progress
+* Option to delete all pages from the same host
+
 ### Version 1.5.3 - 31/12/2016
 * Debug blank message
 * Specific project folder for Opera version

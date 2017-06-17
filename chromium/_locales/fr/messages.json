@@ -25,5 +25,9 @@
 
   "optionsSavedMessage": {
     "message": "Options sauvegardées"
+  },
+
+  "deleteHostMessage": {
+    "message": "Suppression de toutes les pages de l'hôte"
   }
 }

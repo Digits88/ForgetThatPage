@@ -25,5 +25,9 @@
 
   "optionsSavedMessage": {
     "message": "Опции бележник"
+  },
+
+  "deleteHostMessage": {
+    "message": "Изтрийте всички страници с име на хост"
   }
 }

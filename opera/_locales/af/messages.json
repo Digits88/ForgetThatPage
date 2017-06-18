@@ -25,5 +25,10 @@
 
   "optionsSavedMessage": {
     "message": "Opsies gered"
+  },
+
+  "deleteHostMessage": {
+    "message": "Verwyder alle bladsye vir hostnaam"
   }
+
 }

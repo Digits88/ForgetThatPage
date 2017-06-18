@@ -25,5 +25,9 @@
 
   "optionsSavedMessage": {
     "message": "επιλογές σωθεί"
+  },
+
+  "deleteHostMessage": {
+    "message": "Διαγράψτε όλες τις σελίδες για όνομα κεντρικού υπολογιστή"
   }
 }

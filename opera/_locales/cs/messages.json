@@ -25,5 +25,9 @@
 
   "optionsSavedMessage": {
     "message": "Možnosti uloženy"
+  },
+
+  "deleteHostMessage": {
+    "message": "Odstranit všechny stránky pro název hostitele"
   }
 }

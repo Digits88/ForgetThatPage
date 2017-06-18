@@ -21,5 +21,9 @@
 
   "optionsSavedMessage": {
     "message": "Optionen gespeichert"
+  },
+
+  "deleteHostMessage": {
+    "message": "Löschen Sie alle Seiten für den Hostnamen"
   }
 }

@@ -25,5 +25,9 @@
 
   "optionsSavedMessage": {
     "message": "বিকল্পগুলি সংরক্ষিত"
+  },
+
+  "deleteHostMessage": {
+    "message": "সমস্ত হোস্টনেম পৃষ্ঠাগুলি মুছুন"
   }
 }

@@ -25,5 +25,9 @@
 
   "optionsSavedMessage": {
     "message": "خيارات حفظ"
+  },
+
+  "deleteHostMessage": {
+    "message": "أزل جميع صفحات اسم المضيف"
   }
 }

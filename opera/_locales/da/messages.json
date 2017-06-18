@@ -25,5 +25,9 @@
 
   "optionsSavedMessage": {
     "message": "Indstillinger gemt"
+  },
+
+  "deleteHostMessage": {
+    "message": "Slet alle sider til værtsnavnet"
   }
 }

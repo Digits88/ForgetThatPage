@@ -25,5 +25,9 @@
 
   "optionsSavedMessage": {
     "message": "Opsiynau arbed"
+  },
+
+  "deleteHostMessage": {
+    "message": "Dileu holl dudalennau ar gyfer yr enw gwesteiwr"
   }
 }

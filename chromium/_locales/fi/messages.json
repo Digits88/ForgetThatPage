@@ -25,5 +25,9 @@
 
   "optionsSavedMessage": {
     "message": "Vaihtoehdot tallennettu"
+  },
+
+  "deleteHostMessage": {
+    "message": "Poista kaikki isäntänimen sivut"
   }
 }

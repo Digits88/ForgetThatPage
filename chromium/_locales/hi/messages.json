@@ -25,5 +25,9 @@
 
   "optionsSavedMessage": {
     "message": "विकल्प सेव किये गए"
+  },
+
+  "deleteHostMessage": {
+    "message": "होस्टनाम के लिए सभी पृष्ठों को हटाएं"
   }
 }

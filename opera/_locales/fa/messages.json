@@ -25,5 +25,9 @@
 
   "optionsSavedMessage": {
     "message": "گزینه های ذخیره شده"
+  },
+
+  "deleteHostMessage": {
+    "message": "حذف تمام صفحات برای نام میزبان"
   }
 }

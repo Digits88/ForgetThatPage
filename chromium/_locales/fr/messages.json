@@ -28,6 +28,6 @@
   },
 
   "deleteHostMessage": {
-    "message": "Suppression de toutes les pages de l'hôte"
+    "message": "Suppression de toutes les pages pour le nom d'hôte"
   }
 }

@@ -25,5 +25,9 @@
 
   "optionsSavedMessage": {
     "message": "Opcioj savis"
+  },
+
+  "deleteHostMessage": {
+    "message": "Forigi ĉiujn paĝojn por komputilnomo"
   }
 }

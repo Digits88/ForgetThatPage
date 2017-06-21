@@ -25,5 +25,9 @@
 
   "optionsSavedMessage": {
     "message": "אפשרויות נשמרו"
+  },
+
+  "deleteHostMessage": {
+    "message": "מחק את כל הדפים עבור שם המארח"
   }
 }

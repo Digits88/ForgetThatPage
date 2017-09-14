@@ -61,7 +61,7 @@ Same as Chrome version
 
 ## Versioning
 
-### Version 1.6.0 - Work In Progress
+### Version 1.6.0 - 14/09/2017
 * Option to delete all pages from the same host (Thanks to TUrabbIT : https://github.com/TUrabbIT)
 
 ### Version 1.5.3 - 31/12/2016
